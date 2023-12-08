@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Minji</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+        .close {
+            font-size: 80px;
+            font-weight: 600;
+            margin-left: 20px;
+            margin-top: 15px;
+            color: rgb(255, 178, 246);
+            opacity: 100%;
+            cursor: pointer;
+        }
+        .close:hover{
+            -webkit-text-stroke: 2px #fff;
+            color: transparent;
+        }
+        .container{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            animation: animate 13s ease-in-out infinite;
+            background-size: cover;
+        }
+        .outer{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.8);
+        }
+        .details{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .details h1{
+            font-size: 5em;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.5s;
+            position: static;
+        }
+        .details h1:hover{
+            -webkit-text-stroke: 2px #fff;
+            color: transparent;
+        }
+        .details h2{
+            text-transform: capitalize;
+            color: #fff;
+            text-shadow: 2px 2px 5px black;
+        }
+        @keyframes animate{
+            0%, 100%{
+                background-image: url(minji1.jpeg);
+            }
+            25%{
+                background-image: url(minji2.jpg);
+            }
+            50%{
+                background-image: url(minji3.jpeg);
+            }
+            75%{
+                background-image: url(minji4.jpeg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="outer">
+                <a href="../index.html#profile-member"><span class="close">&times;</span></a>
+                <div class="details">
+                    <h1>Kim Minji (김민지)</h1>
+                    <h2>Stage Name: Minji (민지)<br>
+                        Position: Rapper<br>
+                        Birthday: May 07, 2004<br>
+                        Blood Type: A<br>
+                        MBTI Type: ESTJ-T<br>
+                        Nationality: Korean<br>
+                        Representative Color: Yellow<br>
+                        Representative Emoji: 🐻</h2>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
